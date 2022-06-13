@@ -1,0 +1,7 @@
+header {
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 5px solid rgb(145, 49, 1);
+}
