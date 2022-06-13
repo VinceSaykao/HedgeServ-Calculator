@@ -1,6 +1,4 @@
-
-
-.calc {
+/* .calc {
     background: rgba(29, 29, 29, 0.267);
     display: flex;
     border: 3px solid black;
@@ -14,6 +12,15 @@
     display: flex;
 }
 
+.buttons button {
+    margin: 10px;
+    border: none;
+    font-size: 25px;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+}
+
 .button-numbers {
     display: flex;
     width: 200px;
@@ -23,4 +30,5 @@
 .button-operators {
     display: flex;
     flex-direction: column;
-}
+} */
+
