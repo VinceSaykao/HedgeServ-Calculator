@@ -17,4 +17,10 @@
 .button-numbers {
     display: flex;
     width: 200px;
+    flex-wrap: wrap;
+}
+
+.button-operators {
+    display: flex;
+    flex-direction: column;
 }
