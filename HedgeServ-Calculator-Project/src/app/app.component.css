@@ -1,9 +1,20 @@
+
+
 .calc {
-    background: #4444;
+    background: rgba(29, 29, 29, 0.267);
     display: flex;
     border: 3px solid black;
     flex-direction: column;
     align-items: center;
     width: 50%;
     border-radius: 10px 10px 1px 1px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.button-numbers {
+    display: flex;
+    width: 200px;
 }
