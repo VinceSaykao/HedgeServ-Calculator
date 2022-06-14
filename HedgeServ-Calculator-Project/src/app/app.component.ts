@@ -19,4 +19,14 @@ export class AppComponent {
 
   }
 
+  equals() {
+    this.toshow = eval(this.currvalue)
+    this.currvalue = this.toshow
+  }
+
+  clear() {
+    this.currvalue = '';
+    this.toshow = this.currvalue
+  }
+
 }
