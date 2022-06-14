@@ -29,4 +29,11 @@ export class AppComponent {
     this.toshow = this.currvalue
   }
 
+  calcvalue(solve:any) {
+    if(solve.charAt(0) == '0') {
+      solve = solve.slice(1,)
+    }
+    this.toshow = eval(solve)
+  }
+
 }
