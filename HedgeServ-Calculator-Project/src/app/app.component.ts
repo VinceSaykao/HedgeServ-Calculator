@@ -17,9 +17,19 @@ export class AppComponent {
 
   // this takes in a pressed number and input it
   writetoinput(value:string){
-    this.currvalue = this.currvalue + value
-    this.toshow = this.currvalue
+    if ('+' || '-') {
+      this.currvalue = this.currvalue + value
+      this.toshow = this.currvalue
+
+    } else if ('÷') {
+      this.currvalue = '';
+      this.toshow = this.currvalue
+    }
+
+
   }
+
+
 
   // when equal is pressed, it will do calculation and display it
   equals() {
@@ -42,3 +52,5 @@ export class AppComponent {
   }
 
 }
+
+
