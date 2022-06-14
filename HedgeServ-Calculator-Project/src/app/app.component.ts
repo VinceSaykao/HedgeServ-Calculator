@@ -10,4 +10,7 @@ import { Component, NgModule } from '@angular/core';
 })
 export class AppComponent {
 
+  toshow = '0'
+  writetoinput(value:string){}
+
 }
