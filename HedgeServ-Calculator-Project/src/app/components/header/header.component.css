@@ -1,7 +1,9 @@
 header {
-    /* display: flex; */
-    justify-content: space-between;
+    display: fixed;
+    /* justify-content: space-between; */
     align-items: center;
     text-align: center;
     border: 5px solid rgb(145, 49, 1);
+    width: 100%;
+    background: blue;
 }
