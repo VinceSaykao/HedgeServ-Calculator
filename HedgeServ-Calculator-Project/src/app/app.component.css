@@ -50,7 +50,7 @@ body {
 .calculator {
   height: 100%;
   box-shadow: 0 0 25px 0 rgb(5, 198, 252);
-  border-radius: 80px;
+  border-radius: 50px 50px 10px 10px;
   overflow: hidden;
 }
 
@@ -75,7 +75,7 @@ body {
     "seven eight nine equal"
     "four five six equal"
     "one two three equal"
-    "zero decimal clear equal";
+    "zero decimal clear back";
 }
 
 .calculator__keys,
@@ -130,6 +130,10 @@ button {
 .decimal {
   grid-area: decimal;
 }
+
+.back {
+  grid-area: back;
+}
 .clear {
   grid-area: clear;
 }
@@ -149,7 +153,9 @@ button {
 }
 
 [data-type="number"],
-[data-type="clear"] {
+[data-type="clear"],
+[data-type="back"] 
+{
   background: rgb(3, 48, 78);
 }
 
