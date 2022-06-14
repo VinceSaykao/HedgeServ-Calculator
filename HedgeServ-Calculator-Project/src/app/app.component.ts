@@ -153,7 +153,8 @@ export class AppComponent {
   }
 
 
-
+  // where calculation is done
+  // identifies the last character, if decimal or operator will remove it will be removed
   calcvalue() {
     let formula = this.input;
  
