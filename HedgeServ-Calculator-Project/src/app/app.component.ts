@@ -93,7 +93,7 @@ export class AppComponent {
     this.calcAnswer();
   } // end of writetoinput
  
- 
+  // this method will get the last operand
   getLastOperand() {
     let pos:number;
     console.log(this.input)
@@ -103,7 +103,7 @@ export class AppComponent {
     if (this.input.toString().lastIndexOf("/") > pos) pos=this.input.lastIndexOf("/")
     console.log('Last '+this.input.substr(pos+1))
     return this.input.substr(pos+1)
-  }
+  } // end of getLastOperand
  
  
   pressOperator(op: string) {
@@ -116,7 +116,7 @@ export class AppComponent {
    
     this.input = this.input + op
     this.calcAnswer();
-  }
+  } // end of pressOperator
 
   calcAnswer() {
     let formula = this.input;
