@@ -57,15 +57,17 @@ export class AppComponent {
 
 // --------------------------------------------
 
+
+  // input and result will be data-type strings and start as empty strings
   input:string = '';
   result:string = '';
   
- 
+  // writetoinput method will take in a string argument
   writetoinput(num: string) {
     
-    //Do Not Allow . more than once
+    //Do Not Allow "." more than once
     if (num==".") {
-      if (this.input !="" ) {
+      if (this.input != "" ) {
  
         const lastNum=this.getLastOperand()
         console.log(lastNum.lastIndexOf("."))
@@ -76,9 +78,11 @@ export class AppComponent {
     //Do Not Allow 0 at beginning. 
     //Javascript will throw Octal literals are not allowed in strict mode.
     if (num=="0") {
-      if (this.input=="" ) {
+      if (this.input== "" ) {
         return;
       }
+
+      // if PrevKey equals operator it will return nothing
       const PrevKey = this.input[this.input.length - 1];
       if (PrevKey === '/' || PrevKey === '*' || PrevKey === '-' || PrevKey === '+')  {
           return;
@@ -87,7 +91,7 @@ export class AppComponent {
  
     this.input = this.input + num
     this.calcAnswer();
-  }
+  } // end of writetoinput
  
  
   getLastOperand() {
