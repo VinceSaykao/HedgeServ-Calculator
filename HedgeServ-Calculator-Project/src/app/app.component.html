@@ -8,7 +8,8 @@
     <div class="container">
         <div class="calculator">
         
-            <input class="calculator_display" [(ngModel)] = "toshow" type="text">  
+            <!-- <input #box (keyup.enter)="calcvalue(box.value)" class="calculator_display" [(ngModel)] = "toshow" type="text">  -->
+            <input class="calculator_display" [(ngModel)] = "input" type="text">  
      
           
           <div class="calculator_keys">
@@ -17,10 +18,10 @@
             buttons have data-key for css grid and input
             data-type: used for css property and input
             -->
-            <button (click)="writetoinput('+')" data-key="plus" data-type="operator">+</button>
-            <button (click)="writetoinput('-')" data-key="minus" data-type="operator">-</button>
-            <button (click)="writetoinput('x')" data-key="times" data-type="operator">&times;</button>
-            <button (click)="writetoinput('÷')" data-key="divide" data-type="operator">÷</button>
+            <button (click)="pressOperator('+')" data-key="plus" data-type="operator">+</button>
+            <button (click)="pressOperator('-')" data-key="minus" data-type="operator">-</button>
+            <button (click)="pressOperator('*')" data-key="times" data-type="operator">&times;</button>
+            <button (click)="pressOperator('/')" data-key="divide" data-type="operator">÷</button>
             <button (click)="writetoinput('1')" class="one" data-key="1" data-type="number">1</button>
             <button  (click)="writetoinput('2')" class="two"data-key="2" data-type="number">2</button>
             <button  (click)="writetoinput('3')" class="three"data-key="3" data-type="number">3</button>
@@ -33,6 +34,7 @@
             <button  (click)="writetoinput('0')" class="zero"data-key="0" data-type="number">0</button>
             <button (click)="writetoinput('.')" class="decimal" data-type="number">.</button>
             <button  (click)="clear()" class="clear" data-type="clear">C</button>
+            <button  (click)="back()" class="back" data-type="back">Back</button>
             <button  (click)="equals()" data-key="equal" data-type="equal">=</button>
 
 
