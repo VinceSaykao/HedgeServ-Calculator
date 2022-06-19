@@ -1,1 +1,36 @@
-<p>calculator works!</p>
+<div class="container">
+    <div class="calculator">
+    
+        <!-- <input #box (keyup.enter)="calcvalue(box.value)" class="calculator_display" [(ngModel)] = "toshow" type="text">  -->
+        <input class="calculator_display" [(ngModel)] = "input" type="text">  
+ 
+      
+      <div class="calculator_keys">
+
+        <!--
+        buttons have data-key for css grid and input
+        data-type: used for css property and input
+        -->
+        <button (click)="pressOperator('+')" data-key="plus" data-type="operator">+</button>
+        <button (click)="pressOperator('-')" data-key="minus" data-type="operator">-</button>
+        <button (click)="pressOperator('*')" data-key="times" data-type="operator">&times;</button>
+        <button (click)="pressOperator('/')" data-key="divide" data-type="operator">÷</button>
+        <button (click)="writetoinput('1')" class="one" data-key="1" data-type="number">1</button>
+        <button  (click)="writetoinput('2')" class="two"data-key="2" data-type="number">2</button>
+        <button  (click)="writetoinput('3')" class="three"data-key="3" data-type="number">3</button>
+        <button  (click)="writetoinput('4')" class="four"data-key="4" data-type="number">4</button>
+        <button  (click)="writetoinput('5')" class="five"data-key="5" data-type="number">5</button>
+        <button  (click)="writetoinput('6')" class="six"data-key="6" data-type="number">6</button>
+        <button  (click)="writetoinput('7')" class="seven"data-key="7" data-type="number">7</button>
+        <button  (click)="writetoinput('8')" class="eight"data-key="8" data-type="number">8</button>
+        <button  (click)="writetoinput('9')" class="nine"data-key="9" data-type="number">9</button>
+        <button  (click)="writetoinput('0')" class="zero"data-key="0" data-type="number">0</button>
+        <button (click)="writetoinput('.')" class="decimal" data-type="number">.</button>
+        <button  (click)="clear()" class="clear" data-type="clear">C</button>
+        <button  (click)="back()" class="back" data-type="back">Back</button>
+        <button  (click)="equals()" data-key="equal" data-type="equal">=</button>
+
+
+      </div>
+    </div>
+  </div>
