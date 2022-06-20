@@ -1,0 +1,14 @@
+.navbar {
+
+
+    width: 7rem;
+    height: 100vh;
+    position: fixed;
+    background: red;
+}
+
+
+
+/* .nav-item:last-child {
+    margin-top: auto;
+} */
