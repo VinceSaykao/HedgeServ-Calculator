@@ -1,9 +1,5 @@
 .navbar {
-    /* background: blue;
-    height: 100px;
-    width: 20%;
-    left: 0;
-    z-index: 10000; */
+
 
     width: 7rem;
     height: 100vh;
@@ -13,6 +9,6 @@
 
 
 
-.nav-item:last-child {
+/* .nav-item:last-child {
     margin-top: auto;
-}
+} */
