@@ -40,14 +40,14 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <ul>
+      
         <a href="#built-with">Built With</a>
-      </ul>
+      
     </li>
     <li>
-      <ul>
+      
         <a href="#installation">Installation</a>
-      </ul>
+      
     </li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
