@@ -18,7 +18,6 @@ li, a, button {
 .navbar-nav {
     list-style: none;
     text-align: center;
-    /* margin: 0 auto; */
 }
 
 .navbar-nav li {
