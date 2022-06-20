@@ -140,7 +140,7 @@
     line-height: 80px;
   }
 
-
+/* If media screen is smaller than 1000px width, it will have these css properties */
   @media screen and (max-width: 1000px) {
 
     .calculator {
@@ -148,11 +148,7 @@
       height: 100%;
       width: 100%;
       border-radius: 0px;
-      /* position: sticky; */
-      /* height:fit-content; */
-   
-   
-    
+
     }
 
 
@@ -199,6 +195,7 @@
   }
 }
 
+  /* if media screen is smaller than 700px height, it will change to these css properties */
   @media screen and (max-height: 700px) {
 
     .calculator {
@@ -206,10 +203,6 @@
       height: 100%;
       width: 100%;
       border-radius: 0px;
-      /* position: sticky; */
-      /* height:fit-content; */
-   
-   
     
     }
 
@@ -226,18 +219,6 @@
   }
 
 
-  .calculator_keys {
-    background: black;
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-areas:
-      ". . . ."
-      "seven eight nine equal"
-      "four five six equal"
-      "one two three equal"
-      "zero decimal clear back";
-  }
-  
   .calculator__keys,
   button {
     border-radius: 1px;
