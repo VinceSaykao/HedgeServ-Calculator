@@ -1,27 +1,135 @@
-# HedgeServCalculatorProject
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
 
-## Development server
+<div id="top"></div>
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<!-- PROJECT SHIELDS -->
+<!--
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+  <h3 align="center">HedgeServ Calulator Project Challenge</h3>
 
-## Further help
+  <p align="center">
+    An amazing app for calculating simple mathmatical problems!
+    <br />
+    <br />
+    <br />
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  </p>
+</div>
+
+
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <ul>
+        <a href="#built-with">Built With</a>
+      </ul>
+    </li>
+    <li>
+         <ul>
+        <a href="#installation">Installation</a>
+      </ul>
+    </li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+
+<img width="1303" alt="image" src="https://user-images.githubusercontent.com/90466599/174649563-970ab03e-5744-4fc9-acd9-3edf22819fdc.png">
+
+
+  - Simple calculator for HedgeServ project challenge. The purpose of this application is for users to calculate simple math problems using this application. The application should be very easy to use and navigate for all users. 
+
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Installation
+* Step One: Git Clone Repo
+* Step Two: In terminal, npm install
+* Step Three: In terminal, npm start
+* Step Four: Open browser, in address-bar, go to http://localhost:4200/ 
+
+
+
+### Built With
+
+* Javscript
+* HTML/CSS
+* Angular.Js
+* Typescript
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+
+
+
+<!-- CONTRIBUTING -->
+## Contributers
+
+* Vince Saykao
+
+
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+
+
+
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+* HedgeServ
+
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/othneildrew
+[product-screenshot]: images/screenshot.png
