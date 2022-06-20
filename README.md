@@ -41,12 +41,12 @@
   <ol>
     <li>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <a href="#built-with">Built With</a>
       </ul>
     </li>
     <li>
       <ul>
-        <li><a href="#installation">Installation</a></li>
+        <a href="#installation">Installation</a>
       </ul>
     </li>
     <li><a href="#contributing">Contributing</a></li>
