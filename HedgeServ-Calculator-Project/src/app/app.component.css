@@ -1,9 +1,9 @@
 
 body {
-  display: flex;
+  /* display: flex; */
   background-image: linear-gradient(236deg, #f008dc, #04cbfd);
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   height: 100%;
   width: 100%;
   padding: 0 auto;
