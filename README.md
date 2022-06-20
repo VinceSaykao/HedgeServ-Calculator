@@ -86,7 +86,6 @@
 
 ### Built With
 
-Built with
 * Javscript
 * HTML/CSS
 * Angular.Js
