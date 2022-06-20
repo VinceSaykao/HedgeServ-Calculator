@@ -1,9 +1,28 @@
 
+
 body, html {
+  margin: 0;
+  padding: 0;
   background-image: linear-gradient(236deg, #f008dc, #04cbfd);
   height: 100%;
   width: 100%;
-  padding: 0;
-  margin: 0;
 }
+
+header {
+  padding: 10px 10%;
+  background: linear-gradient(90deg, rgb(105, 158, 255) 0%, rgb(255, 129, 129) 100%);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100000;
+}
+
+
+
+
+
 
