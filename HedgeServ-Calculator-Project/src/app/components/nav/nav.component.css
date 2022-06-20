@@ -1,11 +1,4 @@
-.navbar {
 
-    /* width: 7rem;
-    height: 100vh;
-    position: fixed; */
-    background: red;
-    display: flex;
-}
 
 * {
     box-sizing: border-box;
@@ -20,12 +13,37 @@ li, a, button {
     text-decoration: none;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
+
+
+.navbar-nav {
+    list-style: none;
+    text-align: center;
+    /* margin: 0 auto; */
 }
+
+.navbar-nav li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.navbar-nav a {
+    transition: all 0.3s ease 0s;
+}
+
+.navbar-nav a::hover {
+    color: blue;
+}
+
+/* button {
+    padding: 0px 25px;
+    background: yellow;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+} */
+
+
 
 
 
