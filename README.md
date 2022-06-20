@@ -66,7 +66,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img width="316" alt="image" src="https://user-images.githubusercontent.com/90466599/165603715-840ed8b2-80c8-45c2-a198-ff7ab4a4b0c4.png">
+
+<img width="1303" alt="image" src="https://user-images.githubusercontent.com/90466599/174649563-970ab03e-5744-4fc9-acd9-3edf22819fdc.png">
+
 
   - Simple calculator for HedgeServ project challenge. The purpose of this application is for users to calculate simple math problems using this application. The application should be very easy to use and navigate for all users. 
 
