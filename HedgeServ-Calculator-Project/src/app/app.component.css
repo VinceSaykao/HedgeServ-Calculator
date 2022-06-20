@@ -1,11 +1,11 @@
 
 
 body, html {
+  margin: 0;
+  padding: 0;
   background-image: linear-gradient(236deg, #f008dc, #04cbfd);
   height: 100%;
   width: 100%;
-  padding: 0;
-  margin: 0;
 }
 
 header {
@@ -24,6 +24,8 @@ header {
   top: 0;
   z-index: 100000;
 }
+
+
 
 
 
