@@ -1,0 +1,30 @@
+.intro-container {
+    height: 100vh;
+
+
+}
+
+.intro-div {
+    text-align: center;
+    color: white;
+    
+}
+
+.instructions-div {
+    text-align: center;
+    color: white;
+    margin-left: 10px;
+    background: #4444;
+    width: 50%;
+    bottom: 0;
+}
+
+.instructions {
+    font-size: 25px;
+}
+
+.notes {
+    text-align: left;
+    padding: 0px 5px 10px 10px;
+}
+
