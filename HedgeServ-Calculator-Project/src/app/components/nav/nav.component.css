@@ -1,3 +1,5 @@
+
+/* nav bar is hidden */
 #navbar {
     display: flex;
     background-color: rgba(0, 0, 0, 0.628);
@@ -18,10 +20,12 @@
     margin: 0 2rem;
   }
   
+  /* when mouse is over nav-bar container, nav-bar will be visible */
   .nav-container:hover #navbar {
     transform: translateY(0);
   }
 
+  /* when media screen is smaller than 700px width, navbar will always show */
   @media screen and (max-height: 700px) {
 
     #navbar {
