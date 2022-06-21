@@ -1,17 +1,58 @@
 
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background: #4444;
+
+.logo {
+    width: 50px;
+    cursor: pointer;
 }
 
-li, a, button {
-    font-size: 16px;
-    color: white;
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+}
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* li, a, button {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
+
 
 
 
@@ -22,32 +63,28 @@ li, a, button {
 
 .navbar-nav li {
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 13px;
 }
 
-.navbar-nav a {
+.navbar-nav a,li {
     transition: all 0.3s ease 0s;
 }
 
-.navbar-nav a::hover {
-    color: blue;
+.navbar-nav a,button,li::hover {
+    color: rgb(81, 255, 174);
+    background-color: red;
 }
 
 
 
-/* button {
-    padding: 0px 25px;
-    background: yellow;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+@media screen and (max-width: 1000px) {
+
+    li, a, button {
+        font-size: 20px;
+     
+    }
+
 } */
 
 
 
-
-
-/* .nav-item:last-child {
-    margin-top: auto;
-} */
