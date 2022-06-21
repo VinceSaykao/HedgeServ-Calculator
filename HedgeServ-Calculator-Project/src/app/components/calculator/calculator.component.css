@@ -1,8 +1,5 @@
 
-img {
-  color: white;
-  height: 1000px;
-}
+
 
 .container {
       height: 100vh;
@@ -13,10 +10,7 @@ img {
       align-items: center;
       box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
       object-fit: contain;
-      bottom: 0;
-      background-image: linear-gradient(236deg, #f008dc, #04cbfd);
-
-  
+      top: 0;
   }
   
 
@@ -26,7 +20,7 @@ img {
     overflow: hidden;
     width: 50%;
     object-fit: contain;
-    /* margin-top: 90px;   */
+    top: 0;
   }
   
   .calculator_display {
