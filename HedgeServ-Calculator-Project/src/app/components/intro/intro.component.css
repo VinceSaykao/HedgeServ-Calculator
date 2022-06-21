@@ -1,8 +1,11 @@
 .intro-container {
     height: 100vh;
     text-shadow: 1px 1px 1px black;
+    display: flex;
+}
 
-
+.intro-card {
+    display: flex;
 }
 
 .intro-div {
@@ -14,7 +17,7 @@
 .instructions-div {
     text-align: center;
     color: white;
-    margin-left: 10px;
+    margin-right: 10px;
     background: #4444;
     width: 50%;
     bottom: 0;
@@ -28,5 +31,22 @@
 .notes {
     text-align: left;
     padding: 0px 5px 10px 10px;
+}
+
+.welcome-div {
+    background: black;
+    color: white;
+    margin-right: 10px;
+    background: #4444;
+    width: 50%;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .intro-container {
+        display: block;
+    }
 }
 
