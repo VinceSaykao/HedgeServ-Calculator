@@ -1,31 +1,36 @@
+
+
+
 .container {
-    font-size: 30px;
-    color: #fff;
-    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
-      0 0 80px #03bcf4, 0 0 160px #03bcf4;
-
-
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      display: flex;
-    
+
+      object-fit: contain;
+      top: 0;
   }
   
-  
+
   .calculator {
-    box-shadow: 0 0 25px 0 rgb(5, 198, 252);
-    border-radius: 50px 50px 10px 10px;
+    box-shadow: 0 0 25px 0 rgb(23, 23, 23); 
+    border-radius: 30px 30px 10px 10px;
     overflow: hidden;
-    height: 100vh;
+    width: 50%;
+    object-fit: contain;
+    top: 0;
   }
   
   .calculator_display {
     background-color: rgb(4, 34, 58);
-    color: var(--grey-050);
-    width: 600px;
+    color: white;
+    width: 97%;
+    height: 13vh;
     padding: 0.75rem 1rem;
     text-align: right;
-    font-size: 140px;
+    font-size: 100px;
   }
   
   .calculator_keys {
@@ -133,5 +138,106 @@
   button {
     padding: 15px 15px;
     line-height: 80px;
+  }
+
+/* If media screen is smaller than 1000px width, it will have these css properties */
+  @media screen and (max-width: 1000px) {
+
+    .calculator {
+      box-shadow: 0 0 25px 0 rgb(0, 0, 0); 
+      height: 100%;
+      width: 100%;
+      border-radius: 0px;
+
+    }
+
+
+  .calculator_display {
+    background-color: rgb(4, 34, 58);
+    color: white;
+    width: 95%;
+    height: 10vh;
+    padding: 0.75rem 1rem;
+    margin: 0;
+    text-align: right;
+    font-size: 60px;
+  }
+
+
+  .calculator_keys {
+    background: black;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-areas:
+      ". . . ."
+      "seven eight nine equal"
+      "four five six equal"
+      "one two three equal"
+      "zero decimal clear back";
+  }
+  
+  .calculator__keys,
+  button {
+    border-radius: 1px;
+    font-size: 30px;
+  
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+      0 0 80px #03bcf4, 0 0 160px #03bcf4;
+  }
+  
+  button {
+    padding: 15px 15px;
+    display: inline-block;
+    vertical-align: middle;
+
+
+  }
+}
+
+  /* if media screen is smaller than 700px height, it will change to these css properties */
+  @media screen and (max-height: 700px) {
+
+    .calculator {
+      box-shadow: 0 0 25px 0 rgb(0, 0, 0); 
+      height: 100%;
+      width: 100%;
+      border-radius: 0px;
+    
+    }
+
+
+  .calculator_display {
+    background-color: rgb(4, 34, 58);
+    color: white;
+    width: 95%;
+    height: 10vh;
+    padding: 0.75rem 1rem;
+    margin: 0;
+    text-align: right;
+    font-size: 60px;
+  }
+
+
+  .calculator__keys,
+  button {
+    border-radius: 1px;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+      0 0 80px #03bcf4, 0 0 160px #03bcf4;
+  }
+  
+  button {
+    padding: 15px 15px;
+    line-height: 10vh;
+    display: inline-block;
+    vertical-align: middle;
+
+
+  }
+
+
+
   }
   

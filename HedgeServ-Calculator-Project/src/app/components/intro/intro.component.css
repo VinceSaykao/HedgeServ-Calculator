@@ -1,0 +1,57 @@
+.intro-container {
+    height: 100vh;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+.intro-card {
+    display: flex;
+}
+
+.intro-div {
+    text-align: center;
+    color: white;
+    
+}
+
+.instructions-div {
+    text-align: center;
+    color: white;
+    margin-right: 10px;
+    background: #4444;
+    width: 50%;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+.instructions {
+    font-size: 25px;
+}
+
+.notes {
+    text-align: left;
+    padding: 0px 5px 10px 10px;
+}
+
+.welcome-div {
+    background: black;
+    color: white;
+    margin-right: 10px;
+    background: #4444;
+    width: 50%;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+.welcome {
+    font-size: 25px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .intro-container {
+        display: block;
+    }
+}
+
