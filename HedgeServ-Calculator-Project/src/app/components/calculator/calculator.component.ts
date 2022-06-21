@@ -40,10 +40,10 @@ export class CalculatorComponent implements OnInit {
       }
    
       this.input = this.input + num
-      this.calcAnswer();
+      this.calcValue();
     } // end of writetoinput
    
-    // this method will get the last operand
+    // this method will get the last input, example: 56+34 , last input is 34
     getLastOperand() {
       let pos:number;
       console.log(this.input)
@@ -56,6 +56,7 @@ export class CalculatorComponent implements OnInit {
     } // end of getLastOperand
    
    
+    // this method inputs all operator clicks and expects a number after pressing operator
     pressOperator(op: string) {
    
       //Do not allow operators more than once
@@ -63,30 +64,12 @@ export class CalculatorComponent implements OnInit {
       if (lastKey === '/' || lastKey === '*' || lastKey === '-' || lastKey === '+')  {
         return;
       }
-     
+  
       this.input = this.input + op
-      this.calcAnswer();
+      this.calcValue();
     } // end of pressOperator
   
-    calcAnswer() {
-      let formula = this.input;
-   
-      let lastKey = formula[formula.length - 1];
-   
-      if (lastKey === '.')  {
-        formula=formula.substr(0,formula.length - 1);
-      }
-   
-      lastKey = formula[formula.length - 1];
-   
-      if (lastKey === '/' || lastKey === '*' || lastKey === '-' || lastKey === '+' || lastKey === '.')  {
-        formula=formula.substr(0,formula.length - 1);
-      }
-   
-      console.log("Formula " +formula);
-      this.result = eval(formula);
-    }
-  
+
     // .substr returns a portion of the string but delete the last input
     back() {
       if (this.input !="" ) {
@@ -104,7 +87,7 @@ export class CalculatorComponent implements OnInit {
   
     // when equals is pressed it will find results through calculations
     equals() {
-      this.calcAnswer();
+      this.calcValue();
       this.input = this.result;
       if (this.input=="0") this.input="";
     }
@@ -112,7 +95,7 @@ export class CalculatorComponent implements OnInit {
   
     // where calculation is done
     // identifies the last character, if decimal or operator will remove it will be removed
-    calcvalue() {
+    calcValue() {
       let formula = this.input;
    
       let lastKey = formula[formula.length - 1];
@@ -131,12 +114,6 @@ export class CalculatorComponent implements OnInit {
       this.result = eval(formula);
     }
    
-  
-    getAnswer() {
-      this.calcAnswer();
-      this.input = this.result;
-      if (this.input=="0") this.input="";
-    }
   
 
   ngOnInit(): void {
