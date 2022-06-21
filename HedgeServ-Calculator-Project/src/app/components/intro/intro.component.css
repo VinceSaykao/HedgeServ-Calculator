@@ -1,5 +1,6 @@
 .intro-container {
     height: 100vh;
+    text-shadow: 1px 1px 1px black;
 
 
 }
@@ -17,6 +18,7 @@
     background: #4444;
     width: 50%;
     bottom: 0;
+    border-radius: 10px;
 }
 
 .instructions {
