@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { CalculatorComponent } from './components/calculator/calculator.component';
 import { NavComponent } from './components/nav/nav.component';
+import { IntroComponent } from './components/intro/intro.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CalculatorComponent,
-    NavComponent
+    NavComponent,
+    IntroComponent,
   ],
   imports: [
     BrowserModule,
