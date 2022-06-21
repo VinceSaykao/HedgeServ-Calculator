@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { CalculatorComponent } from './components/calculator/calculator.component';
 import { NavComponent } from './components/nav/nav.component';
 import { IntroComponent } from './components/intro/intro.component';
+import { AboutComponent } from './components/about/about.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { IntroComponent } from './components/intro/intro.component';
     CalculatorComponent,
     NavComponent,
     IntroComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
