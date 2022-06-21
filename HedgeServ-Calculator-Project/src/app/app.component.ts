@@ -20,7 +20,8 @@ export class AppComponent  {
   onCreatePost(postData: {title: string; content: string}) {
     // send Http request
     this.http
-    .post(
+    //send js object, what user presses in
+    .post<{ input: string }>(
       'https://google.com',
       postData
     )
@@ -31,4 +32,3 @@ export class AppComponent  {
 
 
 }
-  
