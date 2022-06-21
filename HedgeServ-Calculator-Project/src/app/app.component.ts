@@ -8,14 +8,14 @@ import { HttpClient } from '@angular/common/http'
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements OnInit {
+export class AppComponent  {
 
   loadedPosts = [];
 
   // inject http client
   constructor(private http: HttpClient) {}
 
-  ngOnInit() {}
+  // ngOnInit() {}
 
   onCreatePost(postData: {title: string; content: string}) {
     // send Http request
@@ -31,3 +31,4 @@ export class AppComponent implements OnInit {
 
 
 }
+  
