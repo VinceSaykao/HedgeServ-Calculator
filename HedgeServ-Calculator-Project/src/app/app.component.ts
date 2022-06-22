@@ -9,26 +9,20 @@ import { HttpClient } from '@angular/common/http'
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent  {
+  // property messages
+  // messages = this.http.get<any[]>('http://localhost:4201');
 
-  loadedPosts = [];
+  // loadedPosts = [];
 
-  // inject http client
-  constructor(private http: HttpClient) {}
+  // // inject http client
+  // constructor(private http: HttpClient) {}
 
-  // ngOnInit() {}
+  // post() {
+  //   this.http.post('http://localhost:4201/history', {username: 'vince', password: 'saykao'})
+  //   .subscribe(next => console.log(next));
+  // }
 
-  onCreatePost(postData: {title: string; content: string}) {
-    // send Http request
-    this.http
-    //send js object, what user presses in
-    .post<{ input: string }>(
-      'https://google.com',
-      postData
-    )
-    .subscribe(responseData => {
-      console.log(responseData);
-    });
-  }
+
 
 
 }

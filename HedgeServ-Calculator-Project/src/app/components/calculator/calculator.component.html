@@ -1,5 +1,10 @@
 <div class="container">
 
+  <div *ngFor="let message of messages | async">
+    {{ message.message }}
+  </div>
+  
+
     <div class="calculator">
     
         <input class="calculator_display" [(ngModel)] = "input" type="text">  
@@ -33,7 +38,7 @@
         <button (click)="writetoinput('.')" class="decimal" data-type="number">.</button>
         <button  (click)="clear()" class="clear" data-type="clear">C</button>
         <button  (click)="back()" class="back" data-type="back">Back</button>
-        <button  (click)="equals()" data-key="equal" data-type="equal">=</button>
+        <button  (click)="post()" data-key="equal" data-type="equal">=</button>
 
 
       </div>
