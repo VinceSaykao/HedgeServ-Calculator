@@ -8,6 +8,7 @@ import { CalculatorComponent } from './components/calculator/calculator.componen
 import { NavComponent } from './components/nav/nav.component';
 import { IntroComponent } from './components/intro/intro.component';
 import { AboutComponent } from './components/about/about.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { AboutComponent } from './components/about/about.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
