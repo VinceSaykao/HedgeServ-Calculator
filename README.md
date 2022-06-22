@@ -84,6 +84,9 @@
 * HTML/CSS
 * Angular.Js
 * Typescript
+* In Process BACKEND
+* Node.Js
+* Express
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
