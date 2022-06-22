@@ -72,8 +72,8 @@
 ## Installation
 * Step One: Git Clone Repo
 * Step Two: In terminal, "npm i --y"
-* Step Three: In terminal, run the server, "npm run serve"
-* Step Four: Open new terminal tab (Command T on mac), run the client, "ng serve"
+* Step Three: In terminal, MUST cd into server file to run the server, then enter "npm run serve" in terminal
+* Step Four: Open new terminal tab (Command T on mac), run the client, then enter "ng serve" in terminal 
 * Step Five: Open browser, in address-bar, go to http://localhost:4200/ 
 
 
