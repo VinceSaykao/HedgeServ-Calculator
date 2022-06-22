@@ -21,6 +21,10 @@ app.use(express.json())
 
 app.use('/', routes);
 
+app.get('/', (req, res) => {
+    res.send([{message: 'hello world'}])
+})
+
 
 // start our server on port 4201
 app.listen(4201, '127.0.0.1', function() {
