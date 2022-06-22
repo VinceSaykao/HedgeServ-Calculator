@@ -21,10 +21,9 @@ app.use(express.json())
 
 app.use('/', routes);
 
-// // A default hello word route
-// app.get('/', (req, res) => {
-//     res.send({hello: 'world'});
-// });
+app.get('/', (req, res) => {
+    res.send([{message: 'hello world'}])
+})
 
 
 // start our server on port 4201
