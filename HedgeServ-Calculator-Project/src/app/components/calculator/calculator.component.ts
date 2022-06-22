@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http'
 
 @Component({
   selector: 'app-calculator',
@@ -10,7 +11,37 @@ export class CalculatorComponent implements OnInit {
     // input and result will be data-type strings and start as empty strings
     input:string = '';
     result:string = '';
+
+
+
+    // property messages
+    messages = this.http.get<any[]>('http://localhost:4201');
+    loadedPosts = [];
+
+  // inject http client
+  constructor (private http: HttpClient) {}
   
+  // get method
+  get() {
+    this.http.get('http://localhost:4201/calculator')
+    .subscribe(next => console.log(next));
+  }
+
+
+  // this post method calls results and posts the result as an object
+  post() {
+    this.calcValue();
+    this.input = this.result;
+    if (this.input=="0") this.input="";
+
+    this.http.post('http://localhost:4201/calculator', {result: this.result})
+    .subscribe(next => console.log(next));
+  }
+  
+
+
+
+
     
     // writetoinput method will take in a string argument
     writetoinput(num: string) {
